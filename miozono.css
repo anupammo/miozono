@@ -1,0 +1,177 @@
+/* Stylesheet by anupammondal.in */
+.txt-fff {
+  color: #ffffff;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+a#go-now {
+    display: block;
+    color: #000;
+    background-color: #ffcd05;
+    border: #ffcd05 solid 1px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 25px auto;
+    padding: 15px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 200px;
+    text-decoration: none;
+}
+header#miozono-pic {
+    background-color: #ffcd05;
+    background-image: url(img/yellow-bg.jpg);
+    background-size: cover;
+}
+section {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+secction#secnow {
+  display: block;
+  padding: 10% 5%;
+  background-color: #5196e4;
+  background-image: url(img/road.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+section#btns {
+  padding: 50px 0px;
+  background-color: #006897;
+  background-image: url(img/blue-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+section#btns .page-header {
+    border-bottom: 1px solid #ffffff;
+}
+section#gmap-sec {
+    margin: 0px;
+}
+address {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-style: normal;
+}
+.carousel-caption {
+    background-color: #00000070;
+    width: 100%;
+    right: 0%;
+    left: 0%;
+    bottom: 0px;
+}
+h1#typetext-sm {
+    font-size: 38px;
+    font-weight: 900;
+    color: #ffcd05;
+    text-shadow: #000c63 0px 0px 20px;
+}
+h1#typetext-md {
+    font-size: 54px;
+    font-weight: 900;
+    color: #ffcd05;
+    text-shadow: #000c63 0px 0px 20px;
+}
+.cards {
+    font-size: 16px;
+    margin: 15px auto;
+    padding: 30px 10px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.cards i {
+  display: block;
+  text-align: center;
+}
+.cards p {
+  margin-top: 15px;
+}
+.bg-green {
+  background-color: #4caf50;
+  border: #4caf50 solid 1px;
+}
+.bg-green:hover {
+  background-color: #ffffff;
+}
+.bg-green:hover.cards {
+  color: #068400;
+  border: #068400 solid 1px;
+}
+.bg-blue {
+  background-color: #2196f3;
+  border: #2196f3 solid 1px;
+}
+.bg-blue:hover {
+  background-color: #ffffff;
+}
+.bg-blue:hover.cards {
+  color: #2196f3;
+}
+.bg-orange {
+  background-color: #ff5722;
+  border: #ff5722 solid 1px;
+}
+.bg-orange:hover {
+  background-color: #ffffff;
+}
+.bg-orange:hover.cards {
+  color: #ff5722;
+}
+.bg-yellow {
+  background-color: #ffcd05;
+  border: #ffcd05 solid 1px;
+}
+.bg-yellow:hover {
+  background-color: #ffffff;
+}
+.bg-yellow:hover.cards {
+  color: #000;
+  border: #000 solid 1px;
+}
+#miozono-logo {
+    width: 150px;
+    height: auto;
+    margin-top: 25px;
+    border: #ffffff solid 2px;
+    border-radius: 50%;
+    background-color: #ffcd05;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+#miozono-logo:hover {
+    border: #ffffff solid 2px;
+    background-color: #ff5722;
+}
+.page-header {
+    padding-bottom: 5px;
+    margin: 0px 0px 20px;
+    border-bottom-style: dashed !important;
+    border-bottom: 1px solid #ff5722;
+}
+.crdstyl {
+    margin: 10px 30px;
+    border-radius: 3px;
+    box-shadow: #bbbbbb 0px 0px 30px;
+    padding: 15px;
+}
+.crdstl {
+    margin: 10px 30px;
+    border-radius: 3px;
+    padding: 15px;
+}
+p.btn.btn-default {
+  margin: 5px;
+  background: none;
+  background-color: #00000050;
+  border: #ffffff solid 1px;
+  cursor: pointer;
+  color: #ffffff;
+  text-shadow: none;
+}
+footer {
+    background-color: #ffcd05;
+    padding-top: 15px;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Anupam Mondal">
+  	<meta name="web_author" content="anupammondal.in">
+  	<meta name="reply-to" content="a9051985@gmail.com">
+  	<meta name="contact" content="a09051985@gmail.com">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Witherpro 7 Design</title>
+    <link rel="icon" href="https://anupammondal.in/cntnt/logo/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Vustom Style -->
+    <link href="anupammondal.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 class="text-uppercase text-info text-center">Witherpro 7 Design</h1>
+          </div>
+          <form>
+            <div class="form-group col-xs-12">
+              <div class="panel panel-primary">
+                <div class="panel-heading text-uppercase">Select Type</div>
+                <div class="panel-body">
+                  <form>
+                    <select class="form-control">
+                      <option>Select Water Treatment Type</option>
+                      <option>Select Waste Water Handlig Type</option>
+                      <option>Select Aquaculture Type</option>
+                    </select>
+                  </form>
+                </div>
+              </div>
+              <h4 class="text-uppercase text-danger">Application selection</h4>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label class="control-label">Select Water Treatment Type</label>
+                <select class="form-control">
+                  <option>Pre Treatment</option>
+                  <option>Post Treatment</option>
+                  <option>Swiming Pool</option>
+                  <option>Iron Removal Plant</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Circulation (cu.m./hr)" id="wttn" required />
+              </div>
+              <!-- <div class="radio">
+                <label>
+                  <input type="radio" name="wtt" id="wtt1" value="wtt1">
+                  Pre Treatment
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="wtt" id="wtt2" value="wtt2">
+                  Post Treatment
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="wtt" id="wtt3" value="wtt3">
+                  Swiming Pool
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="wtt" id="wtt4" value="wtt4">
+                  Iron Removal Plant
+                </label>
+              </div> -->
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label class="control-label">Select Aquaculture Type</label>
+                <select class="form-control">
+                  <option>Input Water volume in Pond</option>
+                  <option>Input Intended hours of circulation</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Circulation (cu.m./hr)" id="wttn" required />
+              </div>
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
+              <label class="control-label">Select Aquaculture Type</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="at1" id="at1" value="at1">
+                  Input Water volume in Pond
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="at2" id="at2" value="at2">
+                  Input Intended hours of circulation
+                </label>
+              </div>
+              <input type="text" class="form-control" placeholder="Circulation (cu.m./hr)" id="atn" required />
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
+              <label class="control-label">Input Dosing Rate</label>
+              <input type="text" class="form-control" placeholder="Dosing Rate" name="dr" id="dr" required />
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
+              <div class="">
+                <label class="control-label">HVAC Type</label>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="hvac" value="hvac">
+                    Fan Cap in AHU
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group col-xs-12">
+              <h4 class="text-uppercase text-danger">Component selection</h4>
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
+              <label class="control-label">Corona</label>
+              <select class="form-control">
+                <option>Model 1</option>
+                <option>Model 1</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
+              <label class="control-label">Frame</label>
+              <select class="form-control">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
+              <label class="control-label">Selection of Oxygen</label>
+              <input type="text" class="form-control" placeholder="Amount in LPM" name="o2" id="o2" required />
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
+              <div class="">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="transformer" value="hvac">
+                    Transformer
+                  </label>
+                </div>
+              </div>
+            <!-- </div>
+            <div class="form-group col-sm-6 col-xs-12"> -->
+              <div class="">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="boxtype" value="hvac">
+                    Control Box
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
+              <button type="submit" class="btn btn-success text-uppercase">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="anupammondal.js"></script>
+  </body>
+</html>

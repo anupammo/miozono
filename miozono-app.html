@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Anupam Mondal">
+  	<meta name="web_author" content="anupammondal.in">
+  	<meta name="reply-to" content="a9051985@gmail.com">
+  	<meta name="contact" content="a09051985@gmail.com">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Witherpro 7 Design</title>
+    <link rel="icon" href="https://anupammondal.in/cntnt/logo/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Vustom Style -->
+    <!-- <link href="anupammondal.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <!-- <header>
+
+    </header> -->
+    <section>
+      <div class="container">
+        <div class="row">
+        <form>
+          <div class="col-xs-12">
+            <h1 class="text-uppercase text-info text-center">Design your own ozone generator</h1>
+          </div>
+          <!-- <div class="col-md-4 col-xs-12"></div> -->
+          <div class="col-xs-12">
+            <div class="panel panel-primary">
+              <div class="panel-heading text-uppercase">Choose your application</div>
+              <div class="panel-body">
+                <div class="form-group">
+                  <select class="form-control" id="apptype" onchange="selectedapp()">
+                    <option selected value>Select Application Type</option>
+                    <option value="a">Water Treatment</option>
+                    <option value="b">Waste Water Handlig</option>
+                    <option value="c">Aquaculture</option>
+                    <option value="d">HVAC</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-4 col-xs-12"></div> -->
+          <!-- <input type="hidden" id="selectedApptype" value="" /> -->
+          <div class="col-sm-6 col-xs-12" id="wtt" style="display: none;">
+            <div class="form-group">
+              <label class="control-label">Select Water Treatment Type</label>
+              <select class="form-control">
+                <option>Pre Treatment</option>
+                <option>Post Treatment</option>
+                <option>Swiming Pool</option>
+                <option>Iron Removal Plant</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Circulation (cu.m./hr)" id="wttn" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12" id="wwht" style="display: none;">
+            <div class="form-group">
+              <label class="control-label">Select Waste Water Handlig Type</label>
+              <select class="form-control">
+                <option>Input BOD Reduction</option>
+                <option>Input COD Reduction</option>
+                <option>Input Color Removal</option>
+                <option>Input Odor Removal</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Circulation (cu.m./hr)" id="wttn" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12" id="at" style="display: none;">
+            <!-- <div class="form-group">
+              <label class="control-label">Select Aquaculture Type</label>
+              <select class="form-control">
+                <option>Input Water volume in Pond</option>
+                <option>Input Intended hours of circulation</option>
+              </select>
+            </div> -->
+            <div class="form-group">
+              <label class="control-label">Select Aquaculture Type</label>
+              <input type="text" class="form-control" placeholder="Input Water volume in CUM" id="wttn" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Input Intended hours of circulation" id="wttn" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12" id="hvac" style="display: none;">
+            <div class="form-group">
+              <label class="control-label">Input HVAC AHU capacity in CFM</label>
+              <input type="text" class="form-control" placeholder="AHU capacity in CFM" name="hvacn" id="hvacn" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12" id="idr" style="display: none;">
+            <div class="form-group">
+              <label class="control-label">Input Dosing Rate</label>
+              <input type="text" class="form-control" placeholder="Dosing Rate in PPM" name="dr" id="dr" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12" id="btns" style="display: none;">
+            <div class="form-inline">
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="autocalc">
+                    Auto Calculate
+                  </label>
+                </div>
+                <a class="btn btn-warning" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                   Continue
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="collapse" id="collapseExample">
+            <div class="form-group col-xs-12">
+              <h4 class="text-uppercase text-danger">Component selection</h4>
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
+              <label class="control-label">Selection of Oxygen</label>
+              <input type="text" class="form-control" placeholder="Amount in LPM" />
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
+              <label class="control-label">Corona</label>
+              <select class="form-control">
+                <option>Model 1</option>
+                <option>Model 1</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
+              <label class="control-label">Frame</label>
+              <select class="form-control">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
+              <label class="control-label">Transformer</label>
+              <select class="form-control">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
+              <label class="control-label">Control Box</label>
+              <select class="form-control">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
+              <label class="control-label">Submit your query..</label><br />
+              <button type="button" class="btn btn-success text-uppercase" data-toggle="modal" data-target="#myModal">Submit</button>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Your Custom Ozone Generator</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              <span class="text-danger">Application Type : </span>
+              <span class="text-info">Water Treatment Type</span>
+              <span class="text-danger">Defined Amount : </span>
+              <span class="text-info">$$$</span>
+              <span class="text-danger">Dosing Rate : </span>
+              <span class="text-info">$$$</span>
+              <span class="text-danger">Defined Oxygen Amount : </span>
+              <span class="text-info">$$$</span>
+              <span class="text-danger">Corona : </span>
+              <span class="text-info">Model 2</span>
+              <span class="text-danger">Frame : </span>
+              <span class="text-info">Yes</span>
+              <span class="text-danger">Transformer : </span>
+              <span class="text-info">Yes</span>
+              <span class="text-danger">Control Box : </span>
+              <span class="text-info">Yes</span>
+            </p>
+            <a class="btn btn-danger" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse">
+              Continue
+            </a>
+            <hr />
+            <div class="collapse" id="collapse1">
+              <!-- <div class="well"> -->
+                <form>
+                  <div class="form-group">
+                    <label class="text-success" for="exampleInputEmail1">Please fill the details</label>
+                    <input type="text" class="form-control" id="username" placeholder="Full Name">
+                  </div>
+                  <div class="form-group">
+                    <!-- <label for="exampleInputEmail1">Email address</label> -->
+                    <input type="email" class="form-control" id="usermail" placeholder="Email ID">
+                  </div>
+                  <div class="form-group">
+                    <!-- <label for="exampleInputPassword1">Mobile Number</label> -->
+                    <input type="number" class="form-control" id="cellno" placeholder="Mobile Number">
+                  </div>
+                  <a href="https://anupammondal.in" class="btn btn-danger">Reset</a>
+                  <a href="https://anupammondal.in" class="btn btn-success">Order Now on Amazon</a>
+                </form>
+              <!-- </div> -->
+            </div>
+            <!-- <a href="https://anupammondal.in">Oredr Now on Amazon</a> -->
+          </div>
+          <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-danger">Reset</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal">Order Now</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="anupammondal.js"></script>
+  </body>
+</html>
